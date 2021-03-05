@@ -1,0 +1,246 @@
+/* reset */
+footer {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+/* base */
+html {
+
+}
+body{
+
+}
+h1{
+    color: #ffa200;
+    color:linear-gradient(to right, #ffa200, #ffbe01);
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 200px;
+    font-size: 30px;
+    position: relative;
+    top: 95px;
+    
+    
+}
+
+h2{
+    color: #ffa200;
+    color:linear-gradient(to right, #ffa200, #ffbe01);
+    font-size: 30px;
+    margin-top: 5px;
+    position: relative;
+    margin-left: 50px;
+    top: 90px;
+    
+}
+#bold{
+    font-weight: bold;
+}
+
+
+h3{
+    color: #ffa200;
+    color:linear-gradient(to right, #ffa200, #ffbe01);
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 120px;
+    position: relative;  
+    top: 90px;
+}
+h4{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+h5{
+    color: #ffa200;
+    color:linear-gradient(to right, #ffa200, #ffbe01);
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 90px;
+    top: 170px;
+}
+h6{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    top: 70px;
+    margin-left: 100px;
+
+}
+p{
+    color: #000;
+    font-size: 13px;
+
+   
+}
+#p1{
+    position: relative;
+    top: 100px;
+    margin-left: 200px;
+}
+#p2{
+    position: relative;
+    top:100px;
+    margin-left: 50px;
+}
+#p3{
+    position: relative;
+    margin-left: 120px;
+    top:100px ;
+    
+}
+.picone{
+    color: white;
+    text-align: center;
+}
+#p4{
+    position: relative;
+    margin-left: 90px;
+    top: 200px;
+    
+}
+#p5{
+    color: white;
+    position: relative;
+    margin-left: 100px;
+    top: 90px;
+}
+#p6{
+    color: white;
+}
+
+a{
+    color: #ffa200;
+    color:linear-gradient(to right, #ffa200, #ffbe01);
+}
+
+/* header */
+.logo {
+    margin-right: 100px;
+}
+.nav-h {
+    line-height: 100px;
+}
+.logo, .nav-h {
+    height: 150px;
+}
+.nav-h li {
+    width: auto;
+}
+.nav-h li > a {
+    font-weight: bold;
+
+}
+.nav-h li a:hover, .nav-h li a:active {
+    font-weight: bold;
+    text-decoration: underline solid #ffa200 2px;
+    text-underline-offset: 1em;
+    color: #262626;
+}
+.nav-h li a.btn:hover {
+    text-decoration: none;
+}
+
+
+
+/* image */
+.alignRight{
+    float: right;
+    width: 570px;
+}
+.alignLeft{
+    float: left;
+    width: 570px;
+}
+.icone{
+    position: relative;
+    top: 100px;
+    left: 80px;
+    margin-left: 30px;
+}
+.chiffre{
+    position: relative;
+    left: 50px;
+    
+}
+#equipe{
+    position: relative;
+    bottom: 90px;
+    margin-right: 50px;
+}
+#call{
+    position: relative;
+    left: 15px;
+}
+
+
+/*  button */
+.btn-yellow {
+    background-color: #ffa200 !important;
+    background: linear-gradient(to right, #ffa200, #ffbe01);
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 5px;
+    color: white;
+}
+.btn1{
+    position: relative;
+    top: 90px;
+    font-weight: bold;
+    width: 120px;
+    left: 50px;
+}
+.btn2{
+    background-color: white;
+    border-radius: 20px;
+    color:  #ffa200;
+    color: linear-gradient(to right, #ffa200, #ffbe01);
+    font-weight: bold;
+    position: relative;
+    width: 120px;
+    left: 100px;
+    top: 90px;
+}
+
+/* content */
+#content {
+    background-color: #fff7df;
+    height:650px;
+    width: 1110px;
+}
+#background{
+    background-color: #ffa200;
+    background: linear-gradient(to right, #ffbe01,#ffa200);
+    height:220px;
+    width: 1110px;
+}
+#background2{
+    background-color: #ffa200;
+    background: linear-gradient(to right, #ffa200, #ffbe01);
+    height:340px;
+    width: 1110px;
+}
+
+/* footer */
+footer {
+    background-color: #262626;
+    width: 100%;
+    height: 250px;
+    color: #fff;
+}
+
+footer div.logoFooter {
+    background-image: url("image/logo_fond_noir.png");
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 207px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
