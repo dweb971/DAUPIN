@@ -1,0 +1,66 @@
+h1{
+font-size: large;
+font-weight: bold;
+}
+h2{
+font-size: medium;
+margin-top: 100px;
+
+}
+h3{
+
+}
+h4{
+    margin-left: 500px;
+    font-size: larger;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+h5{
+    text-decoration: underline blue 1px;
+    text-underline-offset: 1em;
+    font-size: medium;
+}
+p{
+font-size: small;
+}
+.title{
+   
+}
+.nav{
+    
+    margin-left: 100px;
+    color: black;
+}
+.btn{
+    background-color: white;
+    
+    color: blue;
+    border-radius: 20px;
+    border-color: blue;
+   
+}
+
+.btn2{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    line-height: 30px;
+    font-size: small;
+    width: 120px;
+}
+.imgme{
+    width: 570px;
+   
+}
+.background{
+    background-color:  whitesmoke;
+}
+.center{
+    text-align: center;
+}
+#midcol{
+    background-color: blue;
+}
