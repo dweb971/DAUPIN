@@ -1,9 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Region</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,16 +19,16 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
-
 <form action="traitement.php" method="POST">
    <!-- Main content -->
    <section class="content">
+ 
       <div class="row">
+
         <div class="col-md-6">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Contenu</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -32,20 +38,20 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputName">Titre de la page</label>
-                <input type="text" id="inputName" class="form-control" value="" placeholder="Indiquez le titre de la page">
+                <input type="text" id="inputName" class="form-control" value="" placeholder="Indiquez le titre de la page" name="titrepage">
               </div>
               <div class="form-group">
                 <label for="inputDescription">Description de la page</label>
-                <textarea id="inputDescription" class="form-control" rows="4" placeholder="Ex: Développeur Expert est à la fois une agence web et une agence conseil digitale..."></textarea>
+                <textarea id="inputDescription" class="form-control" rows="4" placeholder="Ex: Développeur Expert est à la fois une agence web et une agence conseil digitale..." name="descripage"></textarea>
               </div>
               
               <div class="form-group">
                 <label for="inputClientCompany">Mot clef de référence</label>
-                <input type="text" id="inputClientCompany" class="form-control" value="" placeholder="Ajoutez quelques mots clés pour le référencement">
+                <input type="text" id="inputClientCompany" class="form-control" value="" placeholder="Ajoutez quelques mots clés pour le référencement" name="motclef">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Adresse url du site web</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="Ex:https://www.developpeurexpert.com">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="Ex:https://www.developpeurexpert.com" name="urlsite">
               </div>
             </div>
             <!-- /.card-body -->
@@ -53,7 +59,6 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Contenu</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -63,11 +68,11 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">Contenu text de la Page</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="contenupage">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Contenu html ancienne page</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="anciennepage">
               </div>
             </div>
             <!-- /.card-body -->
@@ -76,7 +81,6 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Méta Tag</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -86,69 +90,69 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">title</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="title">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">description</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="description">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">keywords</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="keywords">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">lang</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="lang">
               </div>
             </div>
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">og:locale</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="locale">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:type</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="type">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og: title</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="ogtitle">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:description</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="description">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:url</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="url">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:site_name</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="sitename">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:locale</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="oglocale">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:type</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="ogtype">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:title</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="ogtitle">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">og:image</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="ogimage">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">twitter:card</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="twittercard">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">twitter:site</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="twittersite">
               </div>
             </div>
             <!-- /.card-body -->
@@ -157,7 +161,6 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Positionnement</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -167,19 +170,19 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">Poids mot clef</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="poidsclef">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Mot clef pertient</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="pertient">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Poids la page (ko)</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="poidspage">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Nombre de lien interne</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="lieninterne">
               </div>
             </div>
             <!-- /.card-body -->
@@ -187,7 +190,6 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Note</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -197,7 +199,7 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">Observation</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="observation">
               </div>
             </div>
             <!-- /.card-body -->
@@ -511,93 +513,93 @@
               </div>
               <p>Rubrique de classement</p>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="pageweb"
                        checked>
                 <label for="scales">Page Web</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="heuremiroirs">
                 <label for="horns">Heures miroirs</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="leschiffres"
                        checked>
                 <label for="scales">Les chiffres</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="brouillons">
                 <label for="horns">Brouillons</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="accueil"
                        checked>
                 <label for="scales">Accueil</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="actualitemedias">
                 <label for="horns">Actualités et médias</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="annonceshopping"
                        checked>
                 <label for="scales">Annonces et shopping</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="artsculture">
                 <label for="horns">Arts et culture</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="commerce"
                        checked>
                 <label for="scales">Commerce et économie</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="formations">
                 <label for="horns">Formations et emplois</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="gastronomie"
                        checked>
                 <label for="scales">Gastronomie</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="informatique">
                 <label for="horns">Informatique et internet</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="loisirs"
                        checked>
                 <label for="scales">Loisirs et divertissements</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="sante">
                 <label for="horns">Santé</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="science"
                        checked>
                 <label for="scales">Sciences et technologies</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="sciencehumaine">
                 <label for="horns">Sciences humaines</label>
               </div>
               <div>
-                <input type="checkbox" id="scales" name="scales"
+                <input type="checkbox" id="scales" name="societe"
                        checked>
                 <label for="scales">Sociétés et institutions</label>
               </div>
               
               <div>
-                <input type="checkbox" id="horns" name="horns">
+                <input type="checkbox" id="horns" name="tourisme">
                 <label for="horns">Tourisme et voyages</label>
               </div>
               <div class="form-group">
@@ -613,7 +615,7 @@
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Sous catégorie 2</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="souscategorie">
               </div>
             </div>
             <!-- /.card-body -->
@@ -630,27 +632,27 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="pet-select">Civilité</label>
-<select name="pets" id="pet-select">
+                <label for="civ">Civilité</label>
+<select name="civilite" id="civ">
     <option value="">Madame</option>
     <option value="dog">Monsieur</option>
 </select>
               </div>
               <div class="form-group">
                 <label for="inputClientCompany">Nom</label>
-                <input type="text" id="inputClientCompany" class="form-control" value="" placeholder="Entrez un nom">
+                <input type="text" id="inputClientCompany" class="form-control" value="" placeholder="Entrez un nom" name="nom">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Prénom</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="Entrez un prénom">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="Entrez un prénom" name="prenom">
               </div>
               <div class="form-group">
                 <label for="inputClientCompany">Fonction</label>
-                <input type="text" id="inputClientCompany" class="form-control" value="" placeholder="Entrez une fonction">
+                <input type="text" id="inputClientCompany" class="form-control" value="" placeholder="Entrez une fonction" name="fonction">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Entreprise</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="Nom de l'entreprise">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="Nom de l'entreprise" name="entreprise">
               </div>
             </div>
             <!-- /.card-body -->
@@ -667,19 +669,19 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">Adresse</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder=""  name="adresse">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Adresse 2</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="adresse2">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Code postal</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="postal">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Ville</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="ville">
               </div>
               <div class="form-group">
                 <label for="inputName">Pays</label>
@@ -978,15 +980,15 @@
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Téléphone</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="telephone">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Téléphone mobile</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="mobile">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Email</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="email">
               </div>
             </div>
             <!-- /.card-body -->
@@ -994,7 +996,6 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Contact Webmaster</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -1004,15 +1005,15 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputProjectLeader">Webmaster</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="webmaster">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Email du webmaster</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="mailweb">
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Téléphone du webmaster</label>
-                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="">
+                <input type="text" id="inputProjectLeader" class="form-control" value="" placeholder="" name="telweb">
               </div>
             </div>
             <!-- /.card-body -->
@@ -1020,7 +1021,6 @@
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Autres options</h3>
-
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
                   <i class="fas fa-minus"></i>
@@ -1028,23 +1028,23 @@
               </div>
             </div>
             <div>
-              <input type="checkbox" id="scales" name="scales"
+              <input type="checkbox" id="scales" name="active"
                      checked>
               <label for="scales">Active</label>
             </div>
             
             <div>
-              <input type="checkbox" id="horns" name="horns">
+              <input type="checkbox" id="horns" name="categorie">
               <label for="horns">Id catégorie</label>
             </div>
             <div>
-              <input type="checkbox" id="scales" name="scales"
+              <input type="checkbox" id="scales" name="idsouscategorie"
                      checked>
               <label for="scales">Id sous catégorie</label>
             </div>
             
             <div>
-              <input type="checkbox" id="horns" name="horns">
+              <input type="checkbox" id="horns" name="idsouscategorie ">
               <label for="horns">id sous catégorie 2</label>
             </div>
             <!-- /.card-body -->
@@ -1069,14 +1069,12 @@
 </form>
    
   <!-- /.content-wrapper -->
-
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">
       
     </div>
    
   </footer>
-
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -1084,7 +1082,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->

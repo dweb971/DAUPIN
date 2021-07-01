@@ -10,34 +10,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Champs d'importation</title>
+    <title>DEMANDE NOUVEAU MOT DE PASSE - <?php echo $page; ?></title>
 </head>
 
 <body>
     <div class="container">
-
         <div class="row">
-            <div class="col-2">
-
-            </div>
-            <div class="col-8">
-                <form action="dashboard.php" method="POST">
-                    <div class="mb-3">
-                        <label for="validationTextarea">Entrer une url</label>
-                        <textarea class="form-control" id="" placeholder="" required></textarea>
+            <div class="col-md-12">
+                <form method="POST" action="validation.php">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" placeholder="email" minlength="7" maxlength="5977" required>
+                        <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
-                    <button type="submit" class="btn btn-primary" value="valider">Envoyer</button>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <input type="hidden" name="nomForm" value="newPass">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
-            <div>
-
-            </div>
-        </div>
-        <div class="col-2">
-
         </div>
     </div>
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 

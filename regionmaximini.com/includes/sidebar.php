@@ -16,9 +16,9 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link" href="index.php">
+    <p class="nav-link">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>MAXI Dashboard</span></a>
+        <span>MAXI Dashboard</span></p>
 </li>
 
 <!-- Divider -->
@@ -39,8 +39,7 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Liste des sites ajoutés</h6>
-            <a class="collapse-item" href="#">Site Web</a>
-            
+            <a class="collapse-item" href="champ.php">Champ d'import en masse</a>
         </div>
     </div>
 </li>
@@ -50,15 +49,15 @@
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
         aria-expanded="true" aria-controls="collapseUtilities">
         <i class="fas fa-fw fa-wrench"></i>
-        <span>Gestion de region</span>
+        <span>classement</span>
     </a>
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
         data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Gestion de region</h6>
             <a class="collapse-item" href="#">Catégories</a>
-            <a class="collapse-item" href="#">Sous-Catégories</a>
-            <a class="collapse-item" href="#">Sous-Sous-Catégories</a>
+            <a class="collapse-item" href="#">Sous-catégories</a>
+            <a class="collapse-item" href="#">Sous-sous-Catégories</a>
             <a class="collapse-item" href="#">Région</a>
             <a class="collapse-item" href="#">Pays</a>
         </div>

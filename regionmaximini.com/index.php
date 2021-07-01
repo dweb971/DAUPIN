@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -11,7 +15,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Acces aux panneau de gestion</title>
+    <title>REGIONMAXIMINI - Connexion</title>
 </head>
 
 <body>
@@ -22,7 +26,32 @@
 
             </div>
             <div class="col-8">
-                <form action="dashboard.php" method="POST" class="needs-validation" novalidate>
+                <?php 
+            //print_r($_SERVER);
+            // si deconnexion ou session expire 
+            if($_SERVER["HTTP_REFERER"] == "https://".$_SERVER["HTTP_HOST"]."/dashboard.php")
+            {
+
+
+            }
+                
+                if(isset($_SESSION["msg"]))
+                {
+                // affiche message erreur
+                ?>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+
+                <?php
+                }else{
+                // efface toutes les sessions declares
+                $_SESSION = array();
+                session_destroy();
+                }
+                
+                ?>
+                <form action="traitement.php" method="POST" class="needs-validation" novalidate>
                     <div class="card">
                         <div class="card-header">
                             <h1 class="card-title">Connectez Vous !</h1>
@@ -31,29 +60,29 @@
 
                             <div class="form-group">
                                 <label for="Inputemail">Email</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    name="email" required maxlenght="5977" minlenght="3">
+                                <input type="email" class="form-control" id="emailFrm" aria-describedby="emailHelp"
+                                    name="emailFrm" minlenght="7" maxlenght="5977" required>
                                 <div class="valid-feedback">
-                                   Adresse email valide!
+                                    Adresse email valide!
                                 </div>
                                 <div class="invalid-feedback">
-                                Indiquer votre adresse email!
+                                    Indiquer votre adresse email!
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="Inputpassword">Mot de passe</label>
-                                <input type="password" class="form-control" id="motdepasse"
-                                    aria-describedby="motdepasseHelp" name="motdepasse" required minlenght="0"
-                                    maxlenght="10">
+                                <input type="password" class="form-control" id="password"
+                                    aria-describedby="motdepasseHelp" name="password" required minlenght="6"
+                                    maxlenght="10" required>
                                 <div class="valid-feedback">
                                     Mot de passe valide!
                                 </div>
                                 <div class="invalid-feedback">
-                                   Mot de passe invalide!
+                                    Mot de passe invalide!
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary" value="valider">Connexion !</button>
+                            <button type="submit" class="btn btn-primary">Connexion !</button>
                             <a href="motdepasseoublie.php" title="Mot de passe Oublié">Mot de passe oublié ?</a>
                         </div>
                     </div>
@@ -75,25 +104,25 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
     <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

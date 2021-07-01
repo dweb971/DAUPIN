@@ -22,7 +22,7 @@
 
             </div>
             <div class="col-8">
-                <form action="" method="POST" class="needs-validation" novalidate>
+                <form action="index.php" method="POST" class="needs-validation" novalidate>
                     <div class="card">
                         <div class="card-header">
                             <h1 class="card-title">Mot de passe oublié ?</h1>
@@ -32,8 +32,8 @@
                                 <p class="card-text">Pour reinitialiser votre mot de passe, saisissez l'adresse e-mail
                                     que vous avez utiliser pour crée votre compte.</p>
                                 <label for="Inputemail">Email</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    name="email" required maxlenght="5977" minlenght="3">
+                                <input type="email" class="form-control" id="emailFrm" aria-describedby="emailHelp"
+                                    name="emailFrm" required maxlenght="5977" minlenght="3" required>
                                 <div class="valid-feedback">
                                     Email valide!
                                 </div>
