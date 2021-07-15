@@ -29,7 +29,7 @@ session_start();
                 <?php 
             //print_r($_SERVER);
             // si deconnexion ou session expire 
-            if($_SERVER["HTTP_REFERER"] == "https://".$_SERVER["HTTP_HOST"]."/dashboard.php")
+            if($_SERVER["HTTP_REFERER"] == "https://".$_SERVER["HTTP_HOST"]."/index.php")
             {
 
 
@@ -81,7 +81,7 @@ session_start();
                                     Mot de passe invalide!
                                 </div>
                             </div>
-
+                            <input type="hidden" name="form" value="login">
                             <button type="submit" class="btn btn-primary">Connexion !</button>
                             <a href="motdepasseoublie.php" title="Mot de passe Oublié">Mot de passe oublié ?</a>
                         </div>

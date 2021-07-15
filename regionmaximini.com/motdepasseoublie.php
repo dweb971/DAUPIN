@@ -11,7 +11,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Acces aux panneau de gestion</title>
+    <title>Mot de passe oublié</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
             </div>
             <div class="col-8">
-                <form action="index.php" method="POST" class="needs-validation" novalidate>
+                <form action="traitement.php" method="POST" class="needs-validation" novalidate>
                     <div class="card">
                         <div class="card-header">
                             <h1 class="card-title">Mot de passe oublié ?</h1>
@@ -41,7 +41,7 @@
                                 Indiquer votre adresse email!
                                 </div>
                             </div>
-
+                            <input type="hidden" name="form" value="newP">
                             <button type="submit" class="btn btn-primary">Reinitialiser votre mot de passe </button>
 
                         </div>
